@@ -9,7 +9,6 @@ const Edit = () => {
   console.log("id는? " + id);
   console.log("mode는? " + mode);
 
-
   const naviHandle = () => {
     navigate('./home')
   }
