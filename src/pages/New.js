@@ -1,8 +1,23 @@
+import { useNavigate } from "react-router-dom";
+import MyButton from "../components/MyButton";
+import MyHeader from "../components/MyHeader";
+
 const New = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
-      <h1>New</h1>
-      <p>이곳은 일기 작성페이지 입니다</p>
+      <MyHeader
+        headText={"새로운 기록 쓰기"}
+        leftChild={
+          <MyButton onClick={() => navigate(-1)} text={"< 뒤로가기"} />
+        }
+      />
+      <div>
+        <section>
+          
+        </section>
+      </div>
     </div>
   );
 };

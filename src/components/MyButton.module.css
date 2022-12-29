@@ -11,7 +11,9 @@
     font-size: 18px;
     
     white-space: nowrap;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: "Gowun Dodum", sans-serif;
+
+    /* font-family: 'Nanum Myeongjo', serif; */
 }
 
 .default {
