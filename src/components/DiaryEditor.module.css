@@ -1,0 +1,33 @@
+.DiaryEditor{
+
+}
+.DiaryEditor .emotion_list_wrapper{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    gap: 2%;
+}
+
+.DiaryEditor section{
+    margin-bottom: 40px;
+}
+
+.DiaryEditor h4{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.DiaryEditor .input_date{
+    border: none;
+    border-radius: 5px;
+    background-color: #ececec;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    cursor: pointer;
+    font-family: "Gowun Dodum", sans-serif;
+    font-size: 20px;
+
+}
