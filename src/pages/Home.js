@@ -17,21 +17,24 @@ const Home = () => {
       const firstDay = new Date(
         curDate.getFullYear(),
         curDate.getMonth(),
-        1 //1일
+        1, //1일,
+
       ).getTime();
 
       const lastDay = new Date(
         curDate.getFullYear(),
         curDate.getMonth() + 1,
-        0, // getMonth+1로 다음달로 만들어 준 후 그것의 0일 즉이전달의 마지막 날        
-
+        0, // getMonth+1로 다음달로 만들어 준 후 그것의 0일 즉이전달의 마지막 날
+        23,
+        59,
+        59
       ).getTime();
 
       setData(
         diaryList.filter((el) => firstDay <= el.date && el.date <= lastDay)
-      )
-    }else{
-      setData([])
+      );
+    } else {
+      setData([]);
     }
   }, [diaryList, curDate]);
 
@@ -57,7 +60,7 @@ const Home = () => {
         leftChild={<MyButton text={"<"} onClick={decreaseMonth} />}
         rightChild={<MyButton text={">"} onClick={increaseMonth} />}
       />
-      <DiaryList diaryList={data}/>
+      <DiaryList diaryList={data} />
     </div>
   );
 };
