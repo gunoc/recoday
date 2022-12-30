@@ -15,6 +15,11 @@ const Diary = () => {
   const navigate = useNavigate();
   const [data, setData] = useState();
 
+  useEffect(()=>{
+    const titleElement = document.getElementsByTagName('title')[0];
+    titleElement.innerHTML = `독기 - ${id}번 기록`
+  },[])
+
   useEffect(() => {
     if (diaryList.length >= 1) {
       const targetDiary = diaryList.find(

@@ -1,3 +1,4 @@
+import React from 'react'
 import classes from "./EmotionItem.module.css";
 
 const EmotionItem = ({
@@ -18,4 +19,4 @@ const EmotionItem = ({
   );
 };
 
-export default EmotionItem;
+export default React.memo(EmotionItem);
